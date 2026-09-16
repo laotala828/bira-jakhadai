@@ -65,13 +65,13 @@ function EducationItem({ startYear, endYear, degree, school, description }: Educ
 export default function Home() {
   return (
     <div className="flex flex-col flex-1 items-center  font-sans relative">
-      <main className=" w-full max-w-2xl p-8 relative flex flex-col gap-10">
+      <main className=" w-full max-w-2xl p-4 sm:p-8 relative flex flex-col gap-10">
         <section className=" text-xs pl-12 flex flex-col gap-2 relative ">
-          <div className=" w-40 h-40 absolute -translate-x-full left-7.5 overflow-hidden">
-            <Image src="/profile.JPG" alt="Bira Jakhadai" fill className="object-cover" />
-          </div>
           <div>
             <h1 className="text-2xl font-bold font-serif">Bira Jakhadai</h1>
+            <div className="  w-40 h-40 sm:absolute relative sm:-translate-x-full sm:left-7.5  ">
+              <Image src="/profile.JPG" alt="Bira Jakhadai" fill className=" object-contain" />
+            </div>
             <div className=" font-bold text-sm">Professor, Department of Economics, University of Washington</div>
           </div>
 
@@ -84,7 +84,7 @@ export default function Home() {
             before joining the UW faculty.
           </div>
 
-          <div className=" flex gap-4  ">
+          <div className=" flex flex-col sm:flex-row gap-1 sm:gap-4  ">
             <BracketLink href="#">CV(curriculum vitae)</BracketLink>
             <BracketLink href="mailto:email@example.com">email@example.com</BracketLink>
             <BracketLink href="tel:+15551234567">+1 (555) 123-4567</BracketLink>
@@ -92,7 +92,9 @@ export default function Home() {
         </section>
 
         <section className="flex flex-col gap-4 ">
-          <h2 className="text-sm font-bold absolute -translate-x-full left-0 translate-y-0.5 lowercase">Publications</h2>
+          <h2 className=" invisible sm:visible text-sm font-bold absolute -translate-x-full left-0 translate-y-0.5 lowercase">
+            Publications
+          </h2>
 
           {metadata.publications.map((publication) => (
             <PublicationItem key={`${publication.year}-${publication.title}`} {...publication} />
@@ -100,14 +102,18 @@ export default function Home() {
         </section>
 
         <section className="flex flex-col gap-4 ">
-          <h2 className="text-sm font-bold absolute -translate-x-full left-0 translate-y-0.5 lowercase">Courses</h2>
+          <h2 className=" invisible sm:visible text-sm font-bold absolute -translate-x-full left-0 translate-y-0.5 lowercase">
+            Courses
+          </h2>
           {metadata.courses.map((course, index) => (
             <CourseItem key={`${course.title}-${index}`} {...course} />
           ))}
         </section>
 
         <section className="flex flex-col gap-4 ">
-          <h2 className="text-sm font-bold absolute -translate-x-full left-0 translate-y-0.5 lowercase">educations</h2>
+          <h2 className=" invisible sm:visible text-sm font-bold absolute -translate-x-full left-0 translate-y-0.5 lowercase">
+            educations
+          </h2>
           {metadata.educations.map((education, index) => (
             <EducationItem key={`${education.degree}-${index}`} {...education} />
           ))}
