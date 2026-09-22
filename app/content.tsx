@@ -21,102 +21,106 @@ export type Education = {
 };
 
 export const metadata = {
-  title: "Bira Jakhadai",
-  subtitle: "Professor of Economics | Labor Economics & Public Policy",
+  title: "Bira Zhahadai",
+  subtitle: "Assistant Professor of Economics | Macroeconomics & International Economics",
   description:
-    "Bira Jakhadai is a Professor of Economics at the University of Washington, studying labor markets, automation, and public policy using applied econometrics.",
+    "Bira Zhahadai is an Assistant Professor of Economics at Illinois Wesleyan University, studying business cycles, financial frictions, and macroeconomic policy in emerging market economies using applied time series and dynamic equilibrium models.",
   publications: [
     {
       year: "2026",
-      title: "The Local Labor Market Effects of Minimum Wage Increases: Evidence from U.S. Metropolitan Areas",
-      authors: ["Bira Jakhadai", "Sarah Kim", "David Alvarez"],
+      title: "Chicago Boys",
+      authors: ["Bira Zhahadai", "Bryan McCannon"],
       href: "#",
     },
     {
-      year: "2025",
-      title: "Algorithmic Hiring and Labor Market Discrimination",
-      authors: ["Priya Nandakumar", "Bira Jakhadai"],
+      year: "2026",
+      title: "Private Equity and Macroeconomy",
+      authors: ["Bira Zhahadai", "Xi Zhou", "Ernesto F. Reyes"],
       href: "#",
     },
     {
       year: "2023",
-      title: "Returns to Community College Education: Evidence from Administrative Data",
-      authors: ["James O'Malley", "Wei Zhang", "Bira Jakhadai", "Laura Fitzgerald"],
+      title: "Are Business Cycles in Emerging Market Economies Alike?",
+      authors: ["Bira Zhahadai"],
       href: "#",
     },
     {
-      year: "2021",
-      title:
-        "The Long-Run Effects of Universal Basic Income Pilots on Household Consumption and Labor Supply: Evidence from a Randomized Controlled Trial",
-      authors: ["Bira Jakhadai", "Thomas Reiner", "Nadia Osei"],
+      year: "2023",
+      title: "Natural Disaster Clause for Sovereign Debt in Emerging Market Economies",
+      authors: ["Bira Zhahadai", "Olivier Mahul"],
       href: "#",
     },
     {
-      year: "2020",
-      title:
-        "Automation, Trade, and the Decline of Manufacturing Employment in the United States: A Reassessment Using Firm-Level Data",
-      authors: ["Marcus Huang", "Bira Jakhadai"],
-      href: "#",
-    },
-    {
-      year: "2019",
-      title: "Gender Wage Gaps in the Gig Economy",
-      authors: ["Bira Jakhadai", "Elena Petrova"],
+      year: "2022",
+      title: "Productivity Shocks, Financial Frictions, and Business Cycles in Emerging Market Economies",
+      authors: ["Bira Zhahadai"],
       href: "#",
     },
   ] satisfies Publication[],
   courses: [
     {
-      year: "2025",
-      title: "ECON 200: Introduction to Microeconomics",
+      year: "2026",
+      title: "Intermediate Macroeconomics",
       href: "#",
       description:
-        "A foundational survey of consumer and producer behavior, market equilibrium, and competition, with applications to real-world markets and public policy questions.",
+        "Develops the IS-LM, AD-AS, and Solow growth frameworks used to analyze output, inflation, unemployment, and monetary and fiscal policy.",
+    },
+    {
+      year: "2026",
+      title: "International Finance",
+      href: "#",
+      description:
+        "Studies exchange rate determination, balance of payments, and international capital markets, with emphasis on macroeconomic policy in open economies.",
+    },
+    {
+      year: "2026",
+      title: "Introduction to Economics",
+      href: "#",
+      description:
+        "A survey introduction to microeconomic and macroeconomic principles, covering markets, prices, and the forces shaping national economies.",
+    },
+    {
+      year: "2025",
+      title: "Money and Banking",
+      href: "#",
+      description:
+        "Covers the role of money, financial intermediaries, and central banks in the macroeconomy, including how monetary policy is transmitted through the banking system.",
     },
     {
       year: "2024",
-      title: "ECON 483: Econometrics I",
+      title: "Statistics for Business and Economics",
       href: "#",
-      description:
-        "Covers regression analysis, causal inference, and identification strategies including instrumental variables, difference-in-differences, and regression discontinuity design.",
+      description: "Introduces probability, sampling, and statistical inference with applications to business and economic decision-making.",
     },
     {
       year: "2023",
-      title: "ECON 517: Labor Economics",
+      title: "International Trade",
       href: "#",
       description:
-        "A graduate seminar on labor supply and demand, human capital, wage determination, and the empirical methods used to study minimum wage and employment policy.",
-    },
-    {
-      year: "2022",
-      title: "ECON 550: Behavioral Economics and Public Policy",
-      href: "#",
-      description:
-        "Examines how insights from psychology inform economic decision-making and explores behaviorally-informed policy design, from retirement savings to tax compliance.",
+        "Examines the theory and evidence behind why nations trade, and analyzes the welfare effects of tariffs, trade agreements, and globalization.",
     },
   ] satisfies Course[],
   educations: [
     {
       startYear: "2015",
-      endYear: "2020",
-      degree: "PhD in Economics",
-      school: "Massachusetts Institute of Technology",
-      description:
-        "Dissertation on labor market responses to minimum wage policy, advised by the Department of Economics. Focused on applied microeconometrics and causal inference.",
+      endYear: "2022",
+      degree: "Ph.D. in Economics (Field in Macroeconomics)",
+      school: "North Carolina State University",
+      description: 'Dissertation: "Essays on Business Cycles in Emerging Market Economies."',
     },
     {
-      startYear: "2013",
-      endYear: "2015",
-      degree: "MSc in Economics",
-      school: "London School of Economics",
-      description: "Coursework and research in econometrics, public economics, and international trade.",
+      startYear: "2015",
+      endYear: "2017",
+      degree: "M.A. in Economics",
+      school: "North Carolina State University",
+      description: "Coursework and research in macroeconomics and applied time series methods.",
     },
     {
       startYear: "2009",
       endYear: "2013",
-      degree: "BA in Economics",
-      school: "University of California, Berkeley",
-      description: "Graduated with honors; senior thesis on the effects of trade liberalization on regional employment.",
+      degree: "B.S. in Economics",
+      school: "Northeastern University",
+      description: "Undergraduate studies in economics, Boston, Massachusetts.",
     },
   ] satisfies Education[],
 };
